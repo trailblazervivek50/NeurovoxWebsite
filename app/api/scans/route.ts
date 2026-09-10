@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createScanRecord, getUserScans } from '@/src/db/scans';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 async function verifyAuthToken(req: NextRequest): Promise<{ uid: string; email?: string; name?: string } | null> {
   const authHeader = req.headers.get('authorization');
   if (!authHeader || !authHeader.startsWith('Bearer ')) return null;

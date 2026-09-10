@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { deleteScanRecord } from '@/src/db/scans';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function DELETE(
   req: NextRequest,
   context: { params: Promise<{ id: string }> }

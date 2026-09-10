@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cleanupExpiredScans } from '@/src/db/scans';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function POST(req: NextRequest) {
   try {
     const deletedCount = await cleanupExpiredScans();

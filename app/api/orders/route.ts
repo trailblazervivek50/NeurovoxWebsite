@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createOrderRecord, getUserOrders } from '@/src/db/orders';
 import { runPythonEngine } from '@/lib/python-bridge';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function GET(req: NextRequest) {
   try {
     const userId = req.nextUrl.searchParams.get('userId') || 'guest';
