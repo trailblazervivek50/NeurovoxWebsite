@@ -569,33 +569,33 @@ export default function Home() {
             {/* 3 Feature Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto w-full text-left">
               {/* Card 1: Real-time Tracking */}
-              <div className="p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xs transition-shadow">
-                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5">
+              <div className="group p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xl hover:border-[#4E5B31]/40 hover:bg-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5 group-hover:bg-[#384323] group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xs">
                   <Scan className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#2E3019] mb-2">Real-time Tracking</h3>
+                <h3 className="text-lg font-bold text-[#2E3019] mb-2 group-hover:text-[#384323] transition-colors duration-300">Real-time Tracking</h3>
                 <p className="text-xs sm:text-sm text-[#5D6346] leading-relaxed">
                   Sub-millimeter facial landmark detection running 100% in-browser with zero latency.
                 </p>
               </div>
 
               {/* Card 2: Instant Results */}
-              <div className="p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xs transition-shadow">
-                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5">
+              <div className="group p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xl hover:border-[#4E5B31]/40 hover:bg-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5 group-hover:bg-[#384323] group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xs">
                   <Sparkles className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#2E3019] mb-2">Instant Results</h3>
+                <h3 className="text-lg font-bold text-[#2E3019] mb-2 group-hover:text-[#384323] transition-colors duration-300">Instant Results</h3>
                 <p className="text-xs sm:text-sm text-[#5D6346] leading-relaxed">
                   Neural network classification matches your biometric profile to optimal mask sizes in milliseconds.
                 </p>
               </div>
 
               {/* Card 3: Privacy First */}
-              <div className="p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xs transition-shadow">
-                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5">
+              <div className="group p-7 rounded-2xl bg-white/80 border border-[#DCD6C8] shadow-2xs hover:shadow-xl hover:border-[#4E5B31]/40 hover:bg-white transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                <div className="w-12 h-12 rounded-2xl bg-[#EAE5D8] flex items-center justify-center text-[#384323] mb-5 group-hover:bg-[#384323] group-hover:text-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xs">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-[#2E3019] mb-2">Privacy First</h3>
+                <h3 className="text-lg font-bold text-[#2E3019] mb-2 group-hover:text-[#384323] transition-colors duration-300">Privacy First</h3>
                 <p className="text-xs sm:text-sm text-[#5D6346] leading-relaxed">
                   All facial analysis runs locally on your device. Video frames are never recorded or sent to servers.
                 </p>
